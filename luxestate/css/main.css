@@ -1,0 +1,856 @@
+:root{
+    --section-padding: 150px;
+    --main-color: #ffcc01;
+    --text-color:#1F373D;
+    --background-color:#F6F5F4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+ul{
+    list-style: none;
+}
+h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    letter-spacing: 0.025em;
+}
+/* Start Global Rules */
+.container{
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+
+
+/* start header */
+header{
+    /* background-color: cyan; */
+    
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .logo h1 a{
+    font-size: 18pt;
+    font-weight: 600;
+}
+header .container ul{
+    display: flex;
+}
+header .container ul li{
+    margin-left: 23px;
+}
+header .container ul li a:hover{
+    transition: 0.2s;
+    color: var(--main-color);
+}
+header .container .join-us a:first-child {
+    margin-right: 30px;
+}
+header .container .join-us a:first-child:hover{
+    transition: 0.2s;
+    color: var(--main-color);
+}
+header .container .join-us a:nth-child(2) {
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    border-radius: 7px;
+    border: 1px solid var(--main-color);
+}
+header .container .join-us a:nth-child(2):hover {
+    transition: 0.5s;
+    background-color: transparent;
+}
+/* end header */
+
+/* start landing */
+.landing .container{
+    position: relative;
+    height: 630px;
+}
+.landing .container .l-img{
+    position: absolute;
+    right: 0;
+}
+.landing .container .info {
+    position: absolute;
+    display: flex;
+    right: 0px;
+    bottom: 4px;
+    background-color: var(--main-color);
+    padding: 30px;
+}
+.landing .container .info div:first-child{
+    margin-right: 40px;
+}
+.landing .container .info div:first-child i{
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    
+}
+.landing .container .info div:first-child span{
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+    font-weight: 600;
+    
+}
+.landing .container .info div:nth-child(2) i{
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    
+}
+.landing .container .info div:nth-child(2) span{
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+    font-weight: 600;
+    
+}
+
+
+.landing .container .text{
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    right: 50%;
+}
+.landing .container .text h1{
+    font-size: 58px;
+    font-weight: 700;
+}
+.landing form {
+    display: flex;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    box-shadow: 0px 10px 15px 0px rgb(29 31 36 / 10%);
+  }
+  .landing form i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+  }
+  .landing form input[type="text"] {
+    border: none;
+    background: white;
+    padding: 25px 20px 25px 60px;
+    caret-color: var(--main-color);
+    width: calc(100% - 130px);
+    outline: none;
+  }
+  .landing form button  {
+    width: 130px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 25px 20px;
+    border:none;
+    text-transform: uppercase;
+  }
+  .scroll-down{
+    position: absolute;
+    display: flex;
+    bottom: 16%;
+    right: 103%;
+  }
+  .scroll-down a p{
+    position: absolute;
+    right: 0px;
+  }
+  .scroll-down a p{
+    transform: rotate(-90deg);
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  .scroll-down i {
+    position: absolute;
+    top: 70px;
+    right: 37px;
+}
+/* end landing */
+
+
+/* start statics */
+
+.statics{
+    padding-top: var(--section-padding);
+}
+.statics .container{
+    display: flex;
+    justify-content: space-between;
+}
+.statics .container .text{
+   width: 50%;
+}
+.statics .container .text h3{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    width: 70%;
+    color: #1F373D;
+}
+.statics .container .text p:nth-child(2){
+    font-size: 13px;
+}
+.statics .container .text p:nth-child(3){
+    font-size: 13px;
+}
+
+
+.statics .container .boxes{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.statics .container .top{
+    width: 48%;
+    
+}
+.statics .container .top .box{
+    background-color: #F6F5F4;
+    width: 100%;
+    text-align: center;
+    height: 53%;
+}
+.statics .container .top .box p:first-child{
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFCC01;
+    line-height: 2;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.statics .container .top .box p:nth-child(2){
+    font-size: 14px;
+    font-weight: 700;
+    color: #1F373D;
+}
+.statics .container .bot{
+    width: 48%;
+}
+.statics .container .bot .box{
+    background-color: #F6F5F4;
+    width: 100%;
+    text-align: center;
+    height: 53%;
+}
+.statics .container .bot .box p:first-child{
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFCC01;
+    line-height: 2;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.statics .container .bot .box p:nth-child(2){
+    font-size: 14px;
+    font-weight: 700;
+    color: #1F373D;
+}
+/* end statics */
+
+
+
+
+/* start Appartments For Rent  */
+.appart{
+    margin-top: var(--section-padding);
+    padding-bottom: 60px;
+    background-color: var(--background-color);
+}
+.appart .container h2{
+    padding-top: 70px;
+    margin-bottom: 40px;
+}
+
+/* start top cards */
+.appart .container .t-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.appart .container .t-cards .card{
+   width: 32%;
+   box-shadow: 0px 2px 8px 0px rgb(24 49 56 / 15%);
+}
+.appart .container .t-cards .card img{
+   width: 100%;
+}
+.appart .container .t-cards .card .text p:first-child{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 20px 0;
+
+}
+.appart .container .t-cards .card .text .text-inf{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+
+}
+.appart .container .t-cards .card .text .text-inf p:first-child{
+    font-size: 18px;
+    color: #FFCC01;
+    font-weight: 700;
+    padding-top: 0;
+
+}
+.appart .container .t-cards .card .text .text-inf .icons{
+    display: flex;
+}
+.appart .container .t-cards .card .text .text-inf .icons i{
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 2.5;
+    color: #1F373D;
+}
+.appart .container .t-cards .card .text .text-inf .icons p:nth-child(2){
+    font-size: 13px;
+    color: #919EB1;
+    line-height: 2.5;
+    margin-right: 20px;
+}
+.appart .container .t-cards .card .text .text-inf .icons p:nth-child(4){
+    font-size: 13px;
+    color: #919EB1;
+    line-height: 2.5;
+   
+}
+/* end top cards */
+
+
+/* start bot cards */
+.appart .container .b-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.appart .container .b-cards .card{
+   width: 32%;
+   box-shadow: 0px 2px 8px 0px rgb(24 49 56 / 15%);
+}
+.appart .container .b-cards .card img{
+   width: 100%;
+}
+.appart .container .b-cards .card .text p:first-child{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 20px 0;
+
+}
+.appart .container .b-cards .card .text .text-inf{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+
+}
+.appart .container .b-cards .card .text .text-inf p:first-child{
+    font-size: 18px;
+    color: #FFCC01;
+    font-weight: 700;
+    padding-top: 0;
+
+}
+.appart .container .b-cards .card .text .text-inf .icons{
+    display: flex;
+}
+.appart .container .b-cards .card .text .text-inf .icons i{
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 2.5;
+    color: #1F373D;
+}
+.appart .container .b-cards .card .text .text-inf .icons p:nth-child(2){
+    font-size: 13px;
+    color: #919EB1;
+    line-height: 2.5;
+    margin-right: 20px;
+}
+.appart .container .b-cards .card .text .text-inf .icons p:nth-child(4){
+    font-size: 13px;
+    color: #919EB1;
+    line-height: 2.5;
+   
+}
+/* end bot cards */
+
+.appart .container form{
+    margin-top: 50px;
+    width: 80%;
+    position: relative;
+    display: flex;
+
+}
+.appart .container form input[type="text"]{
+    border: none;
+    background: white;
+    padding: 25px 20px 25px 60px;
+    caret-color: var(--main-color);
+    width: calc(100% - 130px);
+    outline: none;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.appart .container form button{
+    width: 130px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 25px 20px;
+    border:none;
+    text-transform: uppercase;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.appart .container form i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+}
+.appart .container form input[type="button"]{
+    background-color: white;
+    border: 0;
+    margin-left: 70px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+/* end Appartments For Rent  */
+
+
+/* start how it work section */
+.works{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.works .container .text h3{
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+.works .container .text p{
+   line-height: 2.4;
+}
+
+.works .container .cards{
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px rgb(24 49 56 / 15%);
+}
+.works .container .cards .card{
+    width: 31.33%;
+    box-shadow: 0px 2px 8px 0px rgb(24 49 56 / 15%);
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+}
+.works .container .cards .card .number{
+    width:100%;
+    height: 100px;
+    position: relative;
+}
+.works .container .cards .card .number p{
+    width: 100%;
+    position: absolute;
+    font-size: 180px;
+    color: #1F373D;
+    font-weight: 600;
+    bottom: -71px;
+    right: 80px;
+
+}
+
+.works .container .cards .card .info{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.works .container .cards .card .info span{
+    font-weight: 600;
+}
+.works .container .cards .card .info span:nth-child(2){
+    margin-left: 25px;
+}
+.works .container .cards .card .info p{
+    margin-left: 50px;
+    margin-top: 22px;
+    color: #1F373D;
+    font-size: 13px;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.works .container .cards .card .info a{
+    color: #1F373D;
+    text-decoration-line: underline;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+/* end how it work section */
+
+
+/* start service */
+.service {
+    margin-bottom: 70px;
+    height: 766px;
+}
+.service .container h3{
+    width: 400;
+    color: #1F373D;
+    margin-bottom: 25px;
+}
+.service .container p{
+    font-size: 13px;
+}
+.service .container .serv-info{
+    display: flex;
+    margin-top: 60px;
+    position: relative;
+}
+.service .container .serv-info img{
+    width: 50%;
+    position: absolute;
+    left: -67px;
+}
+.service .container .serv-info .text{
+    width: 40%;
+    position: absolute;
+    right: 0;
+}
+.service .container .serv-info .text .rating p:first-child{
+    font-size: 25px;
+    font-weight: 600;
+}
+.service .container .serv-info .text .rating p:nth-child(2){
+    padding: 8px 0px 30px 0px;
+    font-size: 13px;
+}
+/* end service */
+
+
+.agent{
+    padding-top: 100px;
+    background-color: var(--background-color);
+    padding-bottom: 100px;
+}
+.agent .container h3{
+    color: #1F373D;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.agent .container p{
+    color: #1F373D;
+    font-size: 13px;
+}
+
+
+.agent .container .b-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.agent .container .b-cards .card{
+   width: 32%;
+   box-shadow: 0px 2px 8px 0px rgb(24 49 56 / 15%);
+}
+.agent .container .b-cards .card img{
+   width: 100%;
+}
+.agent .container .b-cards .card .text p:first-child{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 20px 0;
+
+}
+.agent .container .b-cards .card .text .text-inf{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+
+}
+.agent .container .b-cards .card .text .text-inf p:first-child{
+    font-size: 18px;
+    color: #FFCC01;
+    font-weight: 700;
+    padding-top: 0;
+
+}
+.agent .container .b-cards .card .text .text-inf .icons{
+    display: flex;
+}
+.agent .container .b-cards .card .text .text-inf .icons i{
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 2.5;
+    color: #1F373D;
+    margin-left: 16px;
+}
+/* end bot cards */
+
+
+/* start last section */
+.last-sec{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.last-sec .container .t-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.last-sec .container .t-section .img-sec{
+    position: relative;
+    width: 50%;
+}
+.last-sec .container .t-section .img-sec .img-info{
+    position: absolute;
+    top: 81%;
+    background-color: var(--main-color);
+    padding: 25px 50px;
+    right: 24.5%;
+}
+.last-sec .container .t-section .img-sec .img-info i{
+   font-size: 30px;
+   color: white;
+}
+.last-sec .container .t-section .img-sec .img-info span{
+   font-size: 18px;
+   font-weight: 600;
+   margin-left: 20px;
+   color: #1F373D;
+}
+
+.last-sec .container .t-section .text{
+    width: 40%;
+}
+.last-sec .container .t-section .text h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+.last-sec .container .t-section .text p{
+    font-size: 13px;
+    line-height: 1.8rem;
+}
+
+
+
+.last-sec .container .m-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.last-sec .container .m-section .img-sec{
+    position: relative;
+    width: 50%;
+}
+.last-sec .container .m-section .img-sec .img-info{
+    position: absolute;
+    top: 81%;
+    background-color: var(--main-color);
+    padding: 25px 50px;
+    right: 0;
+}
+.last-sec .container .m-section .img-sec .img-info i{
+   font-size: 30px;
+   color: white;
+}
+.last-sec .container .m-section .img-sec .img-info span{
+   font-size: 18px;
+   font-weight: 600;
+   margin-left: 20px;
+   color: #1F373D;
+}
+
+.last-sec .container .m-section .text{
+    width: 40%;
+}
+.last-sec .container .m-section .text h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+.last-sec .container .m-section .text p{
+    font-size: 13px;
+    line-height: 1.8rem;
+}
+
+
+
+
+
+.last-sec .container .b-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.last-sec .container .b-section .text{
+    width: 40%;
+}
+.last-sec .container .b-section .text h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+.last-sec .container .b-section .text p{
+    font-size: 13px;
+    line-height: 1.8rem;
+}
+.last-sec .container .b-section .text button{
+    background: #1f373d;
+    color: white;
+    padding: 23px 86px;
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* End last section */
+
+
+/* start footer */
+footer{
+    background-color: #1F373D;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+footer .container .sec-top{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #fbfbfb ;
+   padding-bottom: 20px;
+}
+footer .container .header{
+   width: 45%;
+}
+footer .container h3{
+   color: white;
+   margin-bottom: 10px;
+   font-weight: 600;
+}
+footer .container .sec-top form{
+   display: flex;
+   width: 45%;
+   position: relative;
+}
+footer .container .sec-top form input[type="text"]{
+    width: 100%;
+    padding: 25px 21px;
+    outline: none;
+}
+footer .container .sec-top i{
+    position: absolute;
+    right: 0px;
+    font-size: 29px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fbfbfb;
+    height: 95%;
+    width: 90px;
+    line-height: 2.5;
+    padding-left: 29px;
+    color: black;
+}
+
+footer .container .sec-bot{
+    display: flex;
+    padding-top: 70px;
+}
+footer .container .sec-bot .left-sec{
+    width: 30%;
+}
+footer .container .sec-bot .left-sec h4{
+    width: 30%;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+footer .container .sec-bot .left-sec p{
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+footer .container .table{
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+footer .container .table .col p:first-child{
+    padding-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #919EB1;
+}
+footer .container .table .col p{
+    color: #fff;
+    display: flex;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+
+/* end footer */

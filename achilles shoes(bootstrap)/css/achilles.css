@@ -1,0 +1,102 @@
+:root{
+    --main-color:#ef9036;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.main-color{
+    color: var(--main-color);
+}
+    .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e") ;
+    transform: scale(.7) !important;
+}
+    .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+    header .container-fluid  img{
+    width: 50px;
+}
+.nav-bar img{
+    width: 60px;
+}
+
+/* start left sections */
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.price{
+    box-shadow: 1px 3px 7px 0px rgb(0 0 0 / 15%);
+}
+
+.p-color{
+    box-shadow: 1px 3px 7px 0px rgb(0 0 0 / 15%);
+}
+.p-color .c-color{
+    width: 40px;
+    height: 40px;
+}
+.bb-color{
+    padding: 2px;
+    border: 1px solid rgba(153, 152, 152, 0.555);
+}
+
+.reset-btn{
+    box-shadow: 1px 3px 7px 0px rgb(0 0 0 / 15%);
+}
+
+.reset-btn .btn:last-of-type{
+    background-color: var(--main-color);
+}
+
+/* end left sections */
+
+.card{
+    border-radius: 0;
+    box-shadow: 1px 3px 7px 0px rgb(0 0 0 / 10%);
+}
+
+/* star */
+.ratings i{
+    
+    color:#cecece;
+    font-size:32px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+.review-count{
+    font-weight:400;
+    margin-bottom:2px;
+    font-size:24px !important;
+}
+
+.small-ratings i{
+    color:#cecece;   
+}
+.review-stat{
+    font-weight:300;
+    font-size:18px;
+    margin-bottom:2px;
+}
+
+
+/* sale */
+.card::after{
+    content: "sale";
+    text-transform: capitalize;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    line-height: 3;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    top: 3%;
+    right: 3%;
+    position: absolute;
+    
+}
